@@ -30,6 +30,13 @@
   - Using React hooks with callbacks to avoid lint warnings
   - Create a generic dropdown menu with different data requested by an API Service
   - Crete an infinite loading using pagination requested by an API Service
+  
+## :feet: How to clone or run?
+  - Download the zip or clone using github
+  - There's a backend folder and a frontend folder
+  - In each folder run in your command line ``` npm install ```
+  - Then run ``` npm start ```
+  - Important to run both (front and backend)!
 
 ## :metal: Contributions
 Pull requests are always welcomed. For major alterations please think about openning an issue first.
