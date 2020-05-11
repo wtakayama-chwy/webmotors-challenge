@@ -1,0 +1,97 @@
+@import '../../../helpers/variables';
+
+.filtered{
+    margin-top: $default-spacing/2;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $default-grey;
+    text-align: center;
+}
+
+.grid {
+    margin-top: $default-spacing;
+    display: grid;
+    gap: 2.2em;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$mq-mobile} {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 0em;
+    }
+    @media #{$mq-md-device} {
+        gap: 1.3em;
+        padding: 0 1.3em;
+    }
+
+    .vehicle-card-item {
+        background: $default-white;
+        @extend %box-shadow;
+        border-radius: 0.35em;
+
+        @media #{$mq-mobile} {
+            margin-bottom: 2em;
+            width: 75%;
+        }
+
+        li {
+            width: 100%;
+            
+            img { 
+                width: inherit;
+                height: 13rem;
+                @media #{$mq-md-device} {
+                    height: 11rem;
+                }
+            }
+
+            .vehicle-details {
+                height: 15rem;
+                padding: 1em 1.2em;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+
+                @media #{$mq-mobile}, #{$mq-md-device} {
+                    height: 10rem;
+                }
+
+                .vehicle-main-info {
+
+                    h2 {
+                        color: rgb(46, 46, 55);
+                    }
+    
+                    h3 {
+                        color: rgb(139, 140, 153);
+                        font-weight: 500 !important;
+                    }
+                }
+
+                .vehicle-price {
+
+                    strong {
+                        white-space: nowrap;
+                        color: #686976;
+                        font-size: 1.3em;
+                    }
+                }
+
+                .year-and-km {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: rgb(139, 140, 153);
+                    font-size: 0.9em;
+
+                    h4 {
+                        font-weight: 500 !important;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+

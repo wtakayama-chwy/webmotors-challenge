@@ -1,0 +1,39 @@
+
+// VARIABLES
+// Colors
+$default-white: #FFF;
+$light-grey: hsl(216, 26%, 96%);
+$medium-grey: hsl(216, 26%, 40%);
+$secondary-grey: #e7e7e7ff;  
+$default-grey: #41414d;
+$default-shadow: rgba(158, 184, 209, 0.41);
+$default-color: hsl(347, 92%, 52%); 
+$dark-color: hsla(347, 92%, 46%, 1);
+// Spacing
+$default-spacing: 1.5em;
+// Font
+$default-font: 14px Poppins, sans-serif;
+
+// MEDIA-QUERIES
+// $mq-tablet: "(max-width: 875px)";
+$mq-md-device: "(max-width: 890px)";
+$mq-mobile: "(max-width: 560px)";
+
+// PLACEHOLDERS
+%box-shadow {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: $default-shadow 0 0.2em 0.5em 0;
+    overflow: hidden;
+}
+
+%box {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    overflow: hidden;
+    padding: 0 2.5em;
+    height: 3.55em;
+    font-size: 0.8em;
+    border-radius: 2px;
+    border: 2px solid $secondary-grey;
+}

@@ -1,0 +1,90 @@
+@import '../../helpers/variables';
+
+.header-wrapper {
+
+    height: 64px;
+    position: fixed;
+    background-color: $default-white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo-container {
+        margin-left: 1.1em;
+        height: 2.5em;
+        @media #{$mq-mobile} {
+            margin-left: 0;
+        }
+        
+        .webmotors-logo {
+            width: auto;
+            height: 2.5em;
+        }
+    }
+
+    
+    // Container searchBar
+    .searchBar {
+        padding-left: 6.4em;
+        display: flex;
+        align-items: center;
+
+        @media #{$mq-mobile}, #{$mq-md-device}{
+            display: none;
+        }
+
+        .searchBar-input-container {
+            display: flex;
+            box-sizing: border-box;
+            border: 2px solid #ecedf2;
+            border-radius: 0.5em;
+            position: relative;
+            padding: 0.5em;
+
+            img {
+                margin-right: 0.6em;
+            }
+        }
+    }
+    
+    // nav Menu
+    .menu {
+
+        position: relative;
+        width: 55%;
+        z-index: 10;
+
+        @media #{$mq-mobile}, #{$mq-md-device} {
+            display: none;     
+        }
+
+        .menu-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .icon-default-user {
+                height: 2.5em;
+                margin-right: 0.6em;
+            }
+
+            .icon {
+                display: block;
+                width: auto;
+                height: 1.5em;
+                position: relative;
+                cursor: pointer; 
+            }
+
+            .not-logged {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.fixed {
+    position: sticky;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Magnifying Glass</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5,10.0576 C5,7.2686 7.269,4.9996 10.058,4.9996 C12.846,4.9996 15.115,7.2686 15.115,10.0576 C15.115,12.8466 12.846,15.1146 10.058,15.1146 C7.269,15.1146 5,12.8466 5,10.0576 M20.207,18.7926 L15.697,14.2826 C16.583,13.1026 17.115,11.6426 17.115,10.0576 C17.115,6.1656 13.949,2.9996 10.058,2.9996 C6.166,2.9996 3,6.1656 3,10.0576 C3,13.9486 6.166,17.1146 10.058,17.1146 C11.643,17.1146 13.103,16.5826 14.283,15.6966 L18.793,20.2066 C18.988,20.4026 19.244,20.4996 19.5,20.4996 C19.756,20.4996 20.012,20.4026 20.207,20.2066 C20.598,19.8166 20.598,19.1836 20.207,18.7926" id="path-1"></path>
+    </defs>
+    <g id="Icons/Magnifying-Glass" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Fill-1" fill="#000000" xlink:href="#path-1"></use>
+        <g id="Colors/Grey/Grey-1" mask="url(#mask-2)" fill="#2E2D37">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+    </g>
+</svg>

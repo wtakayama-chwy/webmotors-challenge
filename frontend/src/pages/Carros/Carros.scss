@@ -1,0 +1,162 @@
+@import '../../helpers/variables';
+
+.main-wrapper {
+    max-width: 933px;
+    margin: 0 auto;
+
+    .top-options {
+        display: flex;
+        justify-content: space-between;
+        
+        .button-my-car {
+            display: inline-block;
+            padding: 0 $default-spacing;
+            color: orange;
+            border: 3px solid orange;
+            border-radius: 0.5em;
+            font-weight: 600;
+            align-self: center;
+            height: 3rem;
+            width: 14rem;
+            @media #{$mq-md-device} {
+                width: auto !important;
+                margin-right: 1em;
+            }
+            @media #{$mq-mobile} {
+                display: none;
+            }
+        }
+    }
+
+    .search-wrapper {
+
+        background-color: white;
+        max-width: 933px;
+        padding: 0 4em;
+
+        .checkboxes {
+            display: flex;
+            align-items: center;
+            @media #{$mq-mobile} {
+                margin-bottom: 1.5em;
+            }
+        }
+    
+        .input-filters {
+            display: grid;
+            grid-template-columns: 5fr 2fr 2fr;
+            align-items: center;
+            gap: 1em;
+            padding: $default-spacing 0;
+
+            @media #{$mq-mobile} {
+                display: flex !important;
+                flex-flow: column wrap;
+                align-items: center;
+                padding: 0 !important;
+            }
+
+            @media #{$mq-md-device} {
+                grid-template-columns: 3.5fr 1.4fr 1.4fr !important;
+                gap: 0.2em;
+            }
+
+            &_second {
+                display: grid;
+                grid-template-columns: 2.75fr 2.75fr 4.725fr;
+                align-items: center;
+                gap: 1em;
+                padding-bottom: $default-spacing;
+
+                @media #{$mq-mobile} {
+                    display: flex !important;
+                    flex-flow: column wrap;
+                }
+                @media #{$mq-md-device} {
+                    grid-template-columns: 1fr 1fr 2fr;
+                    gap: 0.2em;
+                }
+                
+            }
+
+            .sub-grid {
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+
+                .location-icon {
+                    position: absolute;
+                    height: 1.7em;
+                    margin-top: 0.5em;
+                    margin-left: 0.3em;
+                    @media #{$mq-mobile}, #{$mq-md-device} {
+                        display: none;
+                    }
+                }
+                
+                @media #{$mq-mobile} {
+                    display: flex !important;
+                    flex-flow: column wrap;
+                    align-items: center;
+                    width: 100%;
+                }
+                @media #{$mq-md-device} {
+                    grid-template-columns: 1.5fr 1.1fr !important;
+                }
+            }
+
+            input {
+                @extend %box;
+                @media #{$mq-mobile} {
+                    width: 100%;
+                }
+            }
+        }
+            .search-tools {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 2em;
+
+                @media #{$mq-mobile} {
+                    span {
+                        display: none;
+                    }
+                }
+
+                .advanced-search {
+                    color: $default-color;
+                    font-weight: 700;
+                }
+
+                .clean-filters {
+                    color: $medium-grey;
+                    font-weight: 300;
+                    margin-left: 12.2rem;
+
+                    @media #{$mq-mobile} {
+                        margin-left: 0 !important;
+                    }
+                    @media #{$mq-md-device} {
+                        margin-left: 3rem;
+                    }
+                }
+
+                .offers {
+                    background: $default-color;
+                    font-weight: 600;
+                    letter-spacing: .05em;
+                    font-size: 1.1rem;
+                    width: 36.1%;
+                    color: $default-white;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    padding: $default-spacing/3 0;
+
+                    @media #{$mq-mobile} {
+                        width: 60%;
+                    }
+                }
+            }
+    }
+
+}

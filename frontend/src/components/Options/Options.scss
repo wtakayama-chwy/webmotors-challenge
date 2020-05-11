@@ -1,0 +1,90 @@
+@import '../../helpers/variables';
+
+$width: 10.5rem;
+
+.opcoes-wrapper {
+    display: flex;
+    padding-top: 2em;
+
+    @media #{$mq-mobile} {
+        width: 100%;
+    }
+
+    .opcao {
+        display: flex;
+        width: $width;
+
+        @media #{$mq-mobile} {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        &:nth-child(2) {
+            margin-left: 2em;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .carros, .motos {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+            cursor: pointer;
+            text-decoration: none;
+
+            .text-option {
+    
+                color: $medium-grey;
+    
+                span {
+                    text-transform: uppercase;
+                    @media #{$mq-mobile} {
+                        font-size: 0.85em;
+                    }
+                }
+    
+                h1 {
+                    font-weight: 500;
+                    font-size: 1.5em;
+                    letter-spacing: 0.15em;
+                    @media #{$mq-mobile} {
+                        font-size: 1.25em;
+                        letter-spacing: 0.075em;
+                    }
+    
+                    &:hover, select {
+                        color: $default-color;
+                    }
+                }
+                .selected {
+                    color: $default-color;
+                }
+            }
+    
+    
+            img {
+                margin-right: 1.2em;
+
+                @media #{$mq-mobile} {
+                    margin-left: 0.4em;
+                }
+            }
+        }
+        hr {
+            position: absolute;
+            margin-top: 3.8em;
+            height: 3px;
+            width: $width;
+            border-width: 0;
+            background-color: $dark-color;
+            color: $dark-color;
+
+            @media #{$mq-mobile} {
+                width: 50%;
+            }
+        }
+    }
+}
